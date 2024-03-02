@@ -15,10 +15,6 @@ use App\Http\Controllers\Api\DeskController;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
-
 Route::apiResources([
     'desk' => DeskController::class,
 ]);
